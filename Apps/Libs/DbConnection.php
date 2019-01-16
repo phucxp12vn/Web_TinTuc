@@ -108,6 +108,8 @@ class Apps_Libs_DbConnection {
     public function update(){
         $sql = "update ".$this->tableName." set ".$this->queryParams["value"]." "
                 .$this->buildCondition($this->queryParams["where"])." ".$this->queryParams["other"];
+        var_dump($sql);
+        die();
         $this->query($sql);
     }
     

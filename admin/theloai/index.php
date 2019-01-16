@@ -31,8 +31,8 @@ $user = new Apps_Libs_UserIdentity();
                     <td><?= $row['created_at'] ?></td>
                     <td><?= $row['updated_at'] ?></td>
                     <td>
-                        <a href="<?php echo $router->createURL('Detail',['id'=> $row['id']])?>">Sửa</a>
-                        <a href="<?php echo $router->createURL('Delete',['id'=> $row['id']])?>">Xóa</a>
+                        <a href="<?php echo $router->createURL('theloai/detail',['id'=> $row['id']])?>">Sửa</a>
+                        <a href="<?php echo $router->createURL('theloai/delete',['id'=> $row['id']])?>">Xóa</a>
                     </td>                    
                 </tr>
                 <?php } ?>
